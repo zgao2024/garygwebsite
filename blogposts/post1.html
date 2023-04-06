@@ -24,9 +24,9 @@
 </head>
 <body>
     <nav>
-        <a href="/garygwebsite/index.html" class="font-serif font-bold text-xl">Home</a>
-        <a href="/garygwebsite/about.html" class="font-serif font-bold text-xl">About</a>
-        <a href="/garygwebsite/blog.html" class="font-serif font-bold text-xl">Back</a>
+        <a href="/index.html" class="font-serif font-bold text-xl">Home</a>
+        <a href="/about.html" class="font-serif font-bold text-xl">About</a>
+        <a href="/blog.html" class="font-serif font-bold text-xl">Back</a>
     </nav>
     <center><h1 class="text-blue-500 font-serif text-2xl">Gary Gao Website</h1></center>
     <hr>
@@ -53,7 +53,7 @@
      <center><p><i>Axiom of Extension: Two sets are equal if and only if they have the same elements</i></p></center>
      <p class="mx-8">Moving on to subsets, if <i>A</i> and <i>B</i> are sets and if every element of <i>A</i> is an element of <i>B</i>, then we can say that <i>A</i> is a subset of <i>B</i>, and we can write:</p>
      <center><p>$A \subset B$</p></center>
-     <p class="mx-8">The definition implies that each set must be included in itself, making set inclusion reflexive. Set invlusion can also be seen as transitive. Set inclusion is also antisymmetric, meaning that if A is a subset of B, B does not have to be a subset of A. 
+     <p class="mx-8">The definition implies that each set must be included in itself, making set inclusion reflexive. Set inclusion can also be seen as transitive. Set inclusion is also antisymmetric, meaning that if A is a subset of B, B does not have to be a subset of A. 
         Because of this property, almost all proofs of equalities between two sets A nad B are split into two parts, first show that A is a subset of B and then show that B is a subset of A.
      </p>
      <p class="mx-8">If <i>A</i> is a proper subset of <i>B</i>, meaning that the two sets are not equal, then we can write:</p>
@@ -71,8 +71,60 @@
      </p>
      <p class="mx-8">Are there enough sets to ensure that every set is an element of some set. Is there a principle that allows us to contruct new sets with old sets without any specification? The answer is the <b>Axiom of Pairing</b>:</p>
      <center><p>Axiom of Pairing: For any two sets there exists a set that they both belong to</p></center>
-     <p class="mx-8">A pair is a set that contains only A and B and nothing else, abbreviated as {a, b}. A singleton is a set that only has another set as its element. This happens when we form a set with a and a, abbreviated as {a, a} or just {a} </p>
+     <p class="mx-8">A <i>pair</i> is a set that contains only A and B and nothing else, abbreviated as {a, b}. A <i>singleton</i> is a set that only has another set as its element. This happens when we form a set with a and a, abbreviated as {a, a} or just {a} </p>
      <p class="mx-8">The axiom of pairing ensures that every set is an element of some set and that ny two sets are simultaenously elements of some one and the same set</p>
+     <p class="mx-8">One way of describing a united set is to require it to contain all the elements that belong to at least one of the two members of pair {A, B}. This is described with the <b>Axiom of Unions</b>:</p>
+     <center><p>Axiom of Unions: For every collection of sets there exists a set that contains all the elements that belong to at least one set of the given collection</p></center>
+     <p class="mx-8">This can be expressed as: </p>
+     <center><p>$U = {x|x \epsilon X for some X in C}$</p></center>   
+     <p class="mx-8">, where C is a collection (of sets). In words, this is "For every collection C there exists a set U such that if x belongs to X for some X in C, then x belongs to U"</p>
+     <p class="mx-8">The simplest symbol for representing U is:</p>
+     <center><p>$\cup _{X \epsilon C} X$</p></center>
+     <p class="mx-8">The above reads as "The union of the set X for some X in collection C "</p>
+     <p class="mx-8">Here are some simple facts and properties about unions: </p>
+     <ul class="mx-8">
+        <li class="mx-8">$\cup _{X \epsilon \emptyset} = \emptyset$</li>
+        <li class="mx-8">$\cup _{X \epsilon [A]} = A$</li>
+        <li class="mx-8">$\cup _{X \epsilon [A, B]} = A \cup B$</li>
+     </ul>
+     <p class="mx-8">Other properties of unions are commutativity, associativity, and idempotence, which just means that the union of A and A is A. </p>
+     <p class="mx-8">A way to egneralize pairs through unions is through the fact that the union of the singletons {a} and {b} is the pair {a, b}. This fact could be extended to triplets and beyond.</p>
+     <p class="mx-8">If A and B are sets, the intersection of A and B is denoted and defined as:</p>
+     <center><p>$A \cap B = [x|x \epsilon A \cap x \epsilon B]$</p></center>
+     <p class="mx-8">The basic properties of intersection are similar to the basic properites of unions.</p>
+     <p class="mx-8">If the intersection of A and B is an empty set, then the sets A and B are called <i>disjoint</i>, hich basically means that they have no elements in common</p>
+     <p class="mx-8">To very useful facts about unions and intersections are the identities called the <i>distributive laws</i>:</p>
+     <center><p>$A \cap (B \cup C) = (A \cap B) \cup (A \cap C)$</p></center>
+     <center><p>$A \cup (B \cap C) = (A \cup B) \cap (A \cup C)$</p></center>
+     <p class="mx-8">Notice how the operations of union and intersection distribute into the bracketed elements, which retains the operation between them</p>
+     <p class="mx-8">If A and b are sets, the <i>relative complement</i> of B in A is the set defined by:</p>
+     <center><p>$A - B = [x|x \epsilon A \cap x \epsilon' B]$</p></center>
+     <p class="mx-8">Basically, the relative complement of B in A is just the elements that are in A but not in B, therefore, simplified into A - B.
+        The absolute complement of A, denoted by A', is the relative complement of A in E, where E is the universe. From this, we get the following properties:
+     </p>
+     <ul class="mx-8">
+        <li class="mx-8">$(A')'=A$</li>
+        <li class="mx-8">$E'=\emptyset vice - versa$</li>
+        <li class="mx-8">$A \subset B if and only if B' \subset A'$</li>
+     </ul>
+     <p class="mx-8">THe msot important statement regarding complements are the <i>De Morgan Laws</i>:</p>
+     <center><p>$(A \cup B)' = A' \cap B'$</p></center>
+     <center><p>$(A \cap B)' = A' \cup B'$</p></center>
+     <p class="mx-8">A good way to memorize this theorem is just to remember so that if you want to distribute the absolute complement into the brackets, make sure to flip the union and intersection operations.</p>
+     <p class="mx-8">If A and B are sets, then the <i>Boolean Sum</i>, or symmetric difference, of A and B is the set A + B defined by:</p>
+     <center><p>$A + B = (A - B) \cup (B - A)$</p></center>
+     <p class = "mx-8">After considering the many properties of subsets, we now wonder whether or not sets themselves constitutes a set. The <b>Axiom of Powers</b> explains this:</p>
+     <center><p>Axiom of Power: For each set there exists a collection of sets that contains among its elements all the subsets of the given set</p></center> 
+     <p class="mx-8">In other words:</p>
+     <center><p>$P = [X|X \subset C]$</p></center>
+     <p class="mx-8">The power set of a finite set with n elements has 2^n elements.</p> 
+     <p class="mx-8">The <i>ordered pairs</i> of a and b, with first coordinate a and second coordinate b, is the set (a, b) defined by: (in terms of set theory)</p>
+     <center><p>$(a, b) = [[a], [a, b]]$</p></center> 
+     <p class="mx-8">If A and B are sets, does there exist a set C that contains all the ordered pairs (a, b) with a in A and b in B? 
+        There does indeed exist a unique set A * B such that it consists exactly the ordered pairs (a, b) with a in A and b in B. This set is called the <i>Cartesian Product</i> of A and B:
+     </p>
+     <center><p>A*B = [x|x = (a, b) for some a in A and for some b in B]</p></center>
+     <p class="mx-8">If the set X = [1, 2] and Y = [3, 4], then the cartesian product X * Y is [(1, 3), (1, 4), (2, 3), (2, 4)]</p>
 
 </body>
 </html>
