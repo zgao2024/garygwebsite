@@ -6,6 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+
+
+
+
+    <style>
+        .writer {
+        font-family: Courier, monospace;
+        display: inline-block;
+        }
+        .writer-text {
+            display: inline-block;
+            overflow: hidden;
+            letter-spacing: 2px;
+            animation: typing 5s steps(30, end), blink .75s step-end infinite;
+            white-space: nowrap;
+            font-size: 30px;
+            font-weight: 700;
+            border-right: 4px solid orange;
+            box-sizing: border-box;
+        }
+
+        @keyframes typing {
+            from { 
+                width: 0% 
+            }
+            to { 
+                width: 100% 
+            }
+        }
+
+        @keyframes blink {
+            from, to { 
+                border-color: transparent 
+            }
+            50% { 
+                border-color: orange; 
+            }
+        }
+    </style>
+
+
+
+
 </head>
 <body>
     <nav>
@@ -35,31 +78,39 @@
 
 
 
-    <div class="py-40" style="background: linear-gradient(90deg, #667eea 0%, #764ba2 100%)"
+    <div class="py-40" style="background: linear-gradient(90deg, #000000 0%, #3b3a3c 100%)"
     >
       <div class="container mx-auto px-6">
-        <h2 class="text-4xl font-bold mb-2 text-white">
-          Hello! I am Gary Gao®.
-        </h2>
-        <h3 class="text-2xl mb-8 text-gray-200">
-          A student studying Mathematics, History, and Finance.
-        </h3>
+        <div class="writer">
+            <div class="writer-text text-6xl text-yellow-300">Hi, Im Gary Gao®.</div>
+        </div>
+        <h1 class = "text-transparent">
+            I
+        </h1>
+        <div class="writer">
+            <div class="writer-text text-2xl text-yellow-300">A student studying Mathematics, History, and Finance.</div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="py-20" style="background: linear-gradient(90deg, #000000 0%, #3b3a3c 100%)"
+    >
+      <div class="container mx-auto px-6">
+        <div class="border-box h-50 w-300 p-4 border-4 border-yellow-300">
+            <p class=" writer mx-8 font-serif font-bold text-2xl text-yellow-300">
+                My name is Gary Gao. This is my personal website. I will be posting regularly about topics such as advanced mathematics, economics, and finance in the link 'blog' above. I will also be offering AP review programs under the link 'courses' above. The courses will cover the AP classes that I have taken before or am currently taking. Also check out the 'About Me' section to learn more about me!
+                </p>
+        </div>
+
       </div>
     </div>
 
 
 
-    <div class = "py-20" style = "background: linear-gradient(90deg, #667eea, #59cb1c)">
-        <p class="mx-8 font-serif font-bold text-2xl text-gray-200">
-            My name is Gary Gao. This is my personal website. I will be posting regularly about topics such as advanced mathematics, economics, and finance in the link 'blog' above. I will also be offering AP review programs under the link 'courses' above. The courses will cover the AP classes that I have taken before or am currently taking. Also check out the 'About Me' section to learn more about me!
-        </p>
-    </div>
 
 
-
-
-
-    <div class="py-40" style="background: linear-gradient(90deg, #59cb1c 0%, #764ba2 100%)"
+    <div class="py-20" style="background: linear-gradient(90deg, #000000 0%, #3b3a3c 100%)"
     >
       <div class="container mx-auto px-6">
         <h2 class="text-4xl font-bold mb-2 text-white">
@@ -67,11 +118,11 @@
         </h2>
         <h3 class="text-3xl mb-8 text-gray-200 font-bold">
           <ul>
-            <li>-Advanced Calculus </li>
-            <li>-Math 55 Content</li>
-            <li>-Trading Strategies</li>
-            <li>-Advance Placement Review Courses and Material</li>
-            <li>-Basic Investment News</li>
+            <li><div class="writer-text text-3xl text-yellow-300 font-bold"> - Advanced Calculus.</div> </li>
+            <li><div class="writer-text text-3xl text-yellow-300 font-bold"> - Math-55 Content.</div></li>
+            <li><div class="writer-text text-3xl text-yellow-300 font-bold"> - Trading Strategies.</div></li>
+            <li><div class="writer-text text-3xl text-yellow-300 font-bold"> - Advanced Placement Review Courses and Material.</div></li>
+            <li><div class="writer-text text-3xl text-yellow-300 font-bold"> - Basic Investment News.</div></li>
           </ul>
         </h3>
       </div>
