@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [
+          ["$", "$"],
+          ["\\(", "\\)"],
+        ],
+      },
+      svg: {
+        fontCache: "global",
+      },
+    };
+  </script>
+</head>
+<body>
+    <nav>
+        <a href="/index.html" class="font-serif font-bold text-xl">Home</a>
+        <a href="/about.html" class="font-serif font-bold text-xl">About</a>
+        <a href="/blog.html" class="font-serif font-bold text-xl">Back</a>
+    </nav>
+    <center><h1 class="text-blue-500 font-serif text-2xl">Gary Gao Website</h1></center>
+    <hr>
+
+    <h1 class="text-transparent text-2xl">
+        I
+    </h1>
+
+    <center><h1 class="text-2xl font-serif">What are Taylor and Maclaurin Series?.</h1></center>
+    <h1 class="text-transparent text-2xl">
+        I
+    </h1>
+
+    <p class="mx-8">Taylor Polynomials is a way to approximate non-polynomial functions with polynomials because polynomials are often easier to deal with. 
+        Higher degrees of the approximating polynomials correponds to a higer accuracy of the approximation. 
+        While a constant term approxiation can only make sure that the two graphs intersect a point c, which is the point that the approximating polynomial is <em>centered at</em>,
+         the ax+b approximation can secure a identical first derivative at c and the 2nd degree polynomial can secure the 2nd derivative and so on.
+    </p>
+    <p class = "mx-8">Definition of the Taylor Polynomial: If f is degree n and centered at c:</p>
+    <center><p>$P_n(x) = f(c) + f'(c)(x-c) + (f''(c)/2!)(x-c)^2+...+(f^n(c)/n!)(x-c)^n$</p></center>
+    <p class = "mx-8">If c = 0, then the Taylor polynomial centered/about 0 is known as a nth degree Maclaurin polynomial for f:</p>
+    <center><p>$P_n(x) = f(0) + f'(0)(x) + (f''(0)/2!)(x)^2+...+(f^n(0)/n!)(x)^n$</p></center>
+    <p class="mx-8">We use the reaminder of Taylor Polynomials to measure the accuracy of an approximating function:</p>
+    <center><p>$f(x) = P_n(x) + R_n(x)$</p></center>
+    <p class = 'mx-8'>The absolute value of the remainder is known as the error associated with the appoximation:</p>
+    <center><p>$Error = |f(x)-P_n(x)| = |R_n(x)|$</p></center>
+    <p class = "mx-8">Lagrage Remainder(Part of Taylor's Theorem): </p>
+    <center><p>$R_n(x) = ((f^{n+1}(c))/(n+1)!)(x-a)^{n+1}$</p></center>
+    <p class = "mx-8">Where for some value between a and x:</p>
+    <center><p>$c \in (a, x)$</p></center>
+    <p class="mx-8">A power series is a method of exact approximation of a function. It is a variable series, meaning that the series, from its value to its convergence/divergence state, 
+        depends on the value of the variable. If x is a variable, then below is a power series centered/about at c:
+    <center><p>$\sum_{n=0}^{\infty} a_n(x-c)^n = a_0+a_1(x-c)+...+a_n(x-c)^n+...$</p></center>
+    <p class="mx-8">A power series can converge at a radius or interval(two times radius) of convergence. The interval of convergence 
+        (for a series centered at a) is either (a-r, a+r), [a-r, a+r], ...etc. The taylor series is defined as a type of power series.</p>
+    <p class="mx-8">A Taylor series is a type of power series. A Taylor series about x=a is defined as:</p>
+    <center><p>$f(x) = f(a) + f'(a)(x-a) + (f''(a)/2!)(x-a)^2 + ... + (f^n(a)/n!)(x-a)^n + ...$</p></center>
+    <p class="mx-8">Some Important Maclaurin Series to know:</p>
+    <center>
+        <figure>
+        <img class=" object-scale-down h-60 w-65 " src="https://mathsmartinthomas.files.wordpress.com/2017/06/maclaurin_art_examples.gif" alt="From A minimum of blind calculations">
+        <figcaption>From "A minimum of blind calculations"</figcaption>
+    </figure>
+    </center>
+
+
+
+
+    
+</body>
+</html>
